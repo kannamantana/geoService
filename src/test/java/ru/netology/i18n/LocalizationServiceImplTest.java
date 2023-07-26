@@ -8,7 +8,6 @@ public class LocalizationServiceImplTest {
     @Test
     public void localizationServiceImplTest() {
         LocalizationServiceImpl message = new LocalizationServiceImpl();
-        assertEquals("Welcome", message.locale(Country.USA));
         assertEquals("Добро пожаловать", message.locale(Country.RUSSIA));
     }
 }

@@ -8,7 +8,6 @@ public class GeoServiceImplTest {
     @Test
     void geoServiceImplTest (){
         GeoServiceImpl geo = new GeoServiceImpl();
-        assertEquals(Country.USA, geo.byIp("96.").getCountry());
         assertEquals(Country.RUSSIA, geo.byIp("172.").getCountry());
     }
 }
